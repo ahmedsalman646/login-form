@@ -3,6 +3,88 @@ body {
 }
 
 
-.loginForm {}
 
-.loginForm input {}
+/* header section start */
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+header nav a {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    transition: all ease .4s;
+}
+header nav a:hover {
+    transform: scale(.95);
+}
+
+header nav span i {
+    margin-left: 10px;
+    font-size: 18px;
+    color: rgb(0, 171, 184);
+    cursor: pointer;
+}
+/* header section end */
+
+
+
+/* loginSection start */
+.loginSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid rgb(0, 209, 224);
+    padding: 50px;
+    border-radius: 7px;
+}
+.loginContent {
+    text-align: center;
+    transition: all ease 1s;
+}
+.loginForm:hover .loginContent {
+    letter-spacing: 3px;
+}
+.loginContent span {
+    color: rgb(0, 209, 224);
+    text-decoration: underline;
+}
+
+.loginForm input {
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: .5px solid rgba(0, 171, 184, .3);
+    outline: none;
+    border-radius: 7px;
+    transition: all ease .5s;
+}
+
+.loginForm input:focus {
+    transform: scale(1.03);
+    letter-spacing: .5px;
+}
+
+.loginForm input[type="submit"] {
+    width: 80%;
+    margin: 10px auto 0 auto;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    background-color: rgb(0, 209, 224, .7);
+    color: #fff;
+}
+
+.loginForm input[type="submit"]:hover {
+    letter-spacing: 2px;
+}
+/* loginSection End */
